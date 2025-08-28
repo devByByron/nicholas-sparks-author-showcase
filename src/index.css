@@ -2,95 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Author Portfolio Design System - Elegant, literary aesthetic with warm neutrals */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core backgrounds - warm beige/taupe palette */
+    --background: 35 15% 96%;
+    --foreground: 25 8% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card and surface colors */
+    --card: 35 20% 98%;
+    --card-foreground: 25 8% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 20% 98%;
+    --popover-foreground: 25 8% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - rich brown for literary elegance */
+    --primary: 25 25% 25%;
+    --primary-foreground: 35 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - warm neutral */
+    --secondary: 35 12% 88%;
+    --secondary-foreground: 25 15% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones for subtle elements */
+    --muted: 35 10% 90%;
+    --muted-foreground: 25 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - warm taupe */
+    --accent: 30 15% 85%;
+    --accent-foreground: 25 15% 20%;
 
+    /* Destructive remains standard */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs - subtle warm grays */
+    --border: 35 8% 85%;
+    --input: 35 8% 88%;
+    --ring: 25 25% 25%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Author brand specific colors */
+    --author-brand: 25 30% 20%;
+    --author-accent: 30 20% 75%;
+    
+    /* Literary gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--accent)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted)));
+    
+    /* Elegant shadows */
+    --shadow-book: 0 8px 25px -8px hsl(var(--primary) / 0.15);
+    --shadow-elegant: 0 4px 20px -4px hsl(var(--primary) / 0.1);
+    
+    /* Smooth transitions */
+    --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-quick: all 0.2s ease-out;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --radius: 0.75rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode with rich, warm tones */
+    --background: 25 15% 8%;
+    --foreground: 35 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 20% 10%;
+    --card-foreground: 35 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 20% 10%;
+    --popover-foreground: 35 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 35 25% 85%;
+    --primary-foreground: 25 15% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 25 15% 15%;
+    --secondary-foreground: 35 20% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 12% 18%;
+    --muted-foreground: 35 8% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 30 15% 20%;
+    --accent-foreground: 35 20% 90%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 35 20% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 25 12% 20%;
+    --input: 25 12% 18%;
+    --ring: 35 25% 85%;
+    /* Dark mode author brand */
+    --author-brand: 35 35% 80%;
+    --author-accent: 30 20% 30%;
+    
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--accent)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted)));
+    
+    /* Dark mode shadows */
+    --shadow-book: 0 8px 25px -8px hsl(0 0% 0% / 0.3);
+    --shadow-elegant: 0 4px 20px -4px hsl(0 0% 0% / 0.2);
   }
 }
 
@@ -100,6 +112,40 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Typography hierarchy */
+  .heading-display {
+    @apply font-serif text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-author-brand;
+  }
+  
+  .heading-primary {
+    @apply font-serif text-3xl md:text-4xl font-normal tracking-wide text-primary;
+  }
+  
+  .heading-secondary {
+    @apply font-serif text-xl md:text-2xl font-normal text-primary;
+  }
+  
+  .body-large {
+    @apply font-sans text-lg leading-relaxed text-foreground;
+  }
+  
+  .body-elegant {
+    @apply font-sans text-base leading-loose text-muted-foreground;
+  }
+
+  /* Animation utilities */
+  .hover-lift {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-elegant;
+  }
+  
+  .fade-in {
+    @apply animate-in fade-in-0 duration-700;
+  }
+  
+  .slide-up {
+    @apply animate-in slide-in-from-bottom-4 duration-500;
   }
 }
