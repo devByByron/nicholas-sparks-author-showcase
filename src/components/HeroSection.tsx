@@ -1,4 +1,4 @@
-import authorPortrait from "@/assets/author-portrait.jpg";
+import nicholasSparksPortrait from "@/assets/nicholas-sparks-portrait.jpg";
 
 const HeroSection = () => {
   return (
@@ -8,8 +8,8 @@ const HeroSection = () => {
         <div className="lg:order-1 fade-in">
           <div className="relative">
             <img
-              src={authorPortrait}
-              alt="Elena Richardson - Author Portrait"
+              src={nicholasSparksPortrait}
+              alt="Nicholas Sparks - Author Portrait"
               className="w-full max-w-md mx-auto lg:max-w-lg rounded-lg shadow-book hover-lift"
             />
           </div>
@@ -23,27 +23,28 @@ const HeroSection = () => {
           
           <div className="space-y-6">
             <h2 className="heading-primary text-primary">
-              About Elena Richardson
+              About Nicholas Sparks
             </h2>
             
             <div className="body-large space-y-4">
               <p>
-                Elena Richardson is an award-winning author whose literary works explore the 
-                intricate relationships between nature, memory, and human connection. Her novels 
-                have been translated into twelve languages and have garnered critical acclaim 
-                worldwide.
+                Nicholas Sparks is one of the world's most beloved storytellers, known for his 
+                deeply emotional novels about love, loss, and second chances. All of his books 
+                have been New York Times bestsellers, with over 130 million copies sold worldwide 
+                in more than 50 languages.
               </p>
               
               <p className="body-elegant">
-                With a background in environmental science and a Master's in Creative Writing 
-                from Columbia University, Elena brings a unique perspective to contemporary 
-                fiction. She currently divides her time between her writing studio in Vermont 
-                and traveling for research.
+                Born in Omaha, Nebraska, Nicholas graduated from the University of Notre Dame 
+                and published his first novel, "The Notebook," in 1996. Eleven of his novels 
+                have been adapted into major motion pictures, including The Notebook, Dear John, 
+                and A Walk to Remember.
               </p>
               
               <p className="body-elegant">
-                Her latest novel, "The Mountain," was longlisted for the National Book Award 
-                and selected as a New York Times Notable Book of the Year.
+                His stories explore themes of faith, destiny, and the enduring power of love 
+                that transcends time and circumstance. Nicholas lives in North Carolina with 
+                his family and continues to inspire readers around the world.
               </p>
             </div>
           </div>

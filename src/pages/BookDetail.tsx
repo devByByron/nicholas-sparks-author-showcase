@@ -2,59 +2,59 @@ import { useParams, Navigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import bookMountain from "@/assets/book-mountain.jpg";
-import bookSea from "@/assets/book-sea.jpg";
-import bookNight from "@/assets/book-night.jpg";
-import bookForest from "@/assets/book-forest.jpg";
+import bookNotebook from "@/assets/book-notebook.jpg";
+import bookDearJohn from "@/assets/book-dear-john.jpg";
+import bookWalkToRemember from "@/assets/book-walk-to-remember.jpg";
+import bookSafeHaven from "@/assets/book-safe-haven.jpg";
 
 const booksData = {
-  "the-mountain": {
-    title: "The Mountain",
-    cover: bookMountain,
-    year: "2024",
-    publisher: "Riverhead Books",
-    isbn: "978-0-735-21234-5",
-    pages: 312,
-    description: "A haunting exploration of loss and redemption set against the backdrop of the Appalachian Mountains. When Sarah returns to her childhood home after her father's death, she must confront the ghosts of her past and the secrets her family has kept buried for decades.",
-    longDescription: "Elena Richardson's latest masterpiece weaves together themes of environmental destruction, family legacy, and personal healing in this unforgettable novel. Set in the coal mining region of West Virginia, 'The Mountain' follows Sarah Chen as she inherits her estranged father's property and discovers a community fighting to preserve their way of life. Through Sarah's journey, Richardson examines how we can find hope and connection even in the face of seemingly insurmountable loss.",
-    amazonUrl: "https://amazon.com/dp/example-mountain",
-    awards: ["Longlisted for National Book Award", "New York Times Notable Book"]
+  "the-notebook": {
+    title: "The Notebook",
+    cover: bookNotebook,
+    year: "1996",
+    publisher: "Warner Books",
+    isbn: "978-0-446-60355-4",
+    pages: 214,
+    description: "A timeless love story that follows Noah and Allie through their passionate young romance and enduring love that withstands the test of time.",
+    longDescription: "Set in the enchanting coastal town of New Bern, North Carolina, 'The Notebook' tells the unforgettable story of Noah Calhoun and Allie Nelson. Their summer romance is interrupted by family disapproval and World War II, but their love endures through letters, separation, and the passage of time. This deeply moving novel explores themes of destiny, devotion, and the belief that true love never dies.",
+    amazonUrl: "https://www.amazon.com/Notebook-Nicholas-Sparks/dp/0446520802",
+    awards: ["New York Times Bestseller", "Adapted into major motion picture"]
   },
-  "the-sea": {
-    title: "The Sea",
-    cover: bookSea,
-    year: "2022",
-    publisher: "Knopf",
-    isbn: "978-0-307-26789-1",
-    pages: 289,
-    description: "An intimate portrait of a coastal community facing the inevitability of change. As rising seas threaten their island home, three families must decide whether to fight or flee.",
-    longDescription: "In this powerful novel about climate change and community resilience, Richardson tells the story of Tidal Island, a fictional barrier island off the coast of North Carolina. Through the eyes of three interconnected families, we witness how environmental crisis can both divide and unite communities. 'The Sea' is both a love letter to coastal communities and a urgent call to action.",
-    amazonUrl: "https://amazon.com/dp/example-sea",
-    awards: ["Finalist for the Pulitzer Prize", "Winner of the Environmental Fiction Award"]
+  "dear-john": {
+    title: "Dear John",
+    cover: bookDearJohn,
+    year: "2006",
+    publisher: "Warner Books",
+    isbn: "978-0-446-57997-6",
+    pages: 276,
+    description: "A soldier falls in love with a college student, but their relationship is tested by war, time, and the ultimate sacrifice of love.",
+    longDescription: "John Tyree is a rebel who enlists in the Army after high school. While on leave, he meets Savannah Curtis, a college student volunteering with Habitat for Humanity. Their two-week romance leads to a long-distance relationship sustained by letters. But after September 11th, John must choose between love and duty. This heart-wrenching story explores the complexities of love, sacrifice, and the true meaning of patriotism.",
+    amazonUrl: "https://www.amazon.com/Dear-John-Nicholas-Sparks/dp/0446699438",
+    awards: ["New York Times Bestseller", "#1 Bestseller", "Adapted into major motion picture"]
   },
-  "the-night": {
-    title: "The Night",
-    cover: bookNight,
-    year: "2021",
-    publisher: "FSG",
-    isbn: "978-0-374-28456-7",
-    pages: 256,
-    description: "A mesmerizing tale of three generations of women and the secrets they keep. Set across decades, this novel explores how family trauma echoes through time.",
-    longDescription: "Richardson's most personal work to date traces the lives of grandmother, mother, and daughter as they navigate love, loss, and forgiveness. Beginning in 1960s Korea and spanning to present-day California, 'The Night' is a meditation on memory, identity, and the stories we tell ourselves to survive.",
-    amazonUrl: "https://amazon.com/dp/example-night",
-    awards: ["Winner of the Asian American Literary Award", "NPR Best Book of the Year"]
+  "a-walk-to-remember": {
+    title: "A Walk to Remember",
+    cover: bookWalkToRemember,
+    year: "1999",
+    publisher: "Warner Books",
+    isbn: "978-0-446-52553-2",
+    pages: 240,
+    description: "A story of teenage love and faith that transforms a rebellious young man and teaches him the true meaning of love and loss.",
+    longDescription: "Set in Beaufort, North Carolina, this touching novel tells the story of Landon Carter, a popular but aimless teenager, and Jamie Sullivan, the unpopular daughter of the town's minister. When circumstances bring them together, Landon discovers that Jamie is hiding a tragic secret. Their unlikely romance becomes a journey of discovery, faith, and the transformative power of unconditional love.",
+    amazonUrl: "https://www.amazon.com/Walk-Remember-Nicholas-Sparks/dp/0446608955",
+    awards: ["New York Times Bestseller", "Adapted into major motion picture", "Young Adult Fiction Award"]
   },
-  "forest": {
-    title: "Forest",
-    cover: bookForest,
-    year: "2019",
-    publisher: "Graywolf Press",
-    isbn: "978-1-555-97789-3",
-    pages: 234,
-    description: "Elena's debut novel that launched her literary career with critical acclaim. A young botanist discovers ancient secrets hidden in an old-growth forest.",
-    longDescription: "Richardson's stunning debut introduces us to Dr. Maya Patel, a botanist who stumbles upon evidence of an ancient civilization while studying endangered plants in the Pacific Northwest. As Maya delves deeper into the forest's mysteries, she must confront her own relationship with nature and science. 'Forest' established Richardson as a vital new voice in environmental literature.",
-    amazonUrl: "https://amazon.com/dp/example-forest",
-    awards: ["Debut Novel of the Year", "Pacific Northwest Book Award"]
+  "safe-haven": {
+    title: "Safe Haven",
+    cover: bookSafeHaven,
+    year: "2010",
+    publisher: "Grand Central Publishing",
+    isbn: "978-0-446-57999-0",
+    pages: 352,
+    description: "A woman with a mysterious past finds love and safety in a small North Carolina town, but her secrets threaten to destroy her new life.",
+    longDescription: "Katie arrives in the small town of Southport, North Carolina, with little more than a mysterious past and the determination to start over. She finds work, makes friends, and meets Alex, a widowed father of two young children. But when Katie's past catches up with her, she must choose between the life she's built and the safety of those she's come to love. This gripping tale combines romance with suspense in classic Sparks fashion.",
+    amazonUrl: "https://www.amazon.com/Safe-Haven-Nicholas-Sparks/dp/0446547573",
+    awards: ["New York Times Bestseller", "#1 Bestseller", "Adapted into major motion picture"]
   }
 };
 
@@ -85,7 +85,7 @@ const BookDetail = () => {
             <div className="lg:col-span-3 slide-up space-y-8">
               <header>
                 <h1 className="heading-primary mb-4">{book.title}</h1>
-                <p className="body-elegant">by Elena Richardson</p>
+                <p className="body-elegant">by Nicholas Sparks</p>
               </header>
 
               <div className="space-y-6">

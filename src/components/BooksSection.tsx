@@ -1,37 +1,37 @@
 import { Link } from "react-router-dom";
-import bookMountain from "@/assets/book-mountain.jpg";
-import bookSea from "@/assets/book-sea.jpg";
-import bookNight from "@/assets/book-night.jpg";
-import bookForest from "@/assets/book-forest.jpg";
+import bookNotebook from "@/assets/book-notebook.jpg";
+import bookDearJohn from "@/assets/book-dear-john.jpg";
+import bookWalkToRemember from "@/assets/book-walk-to-remember.jpg";
+import bookSafeHaven from "@/assets/book-safe-haven.jpg";
 
 const books = [
   {
-    id: "the-mountain",
-    title: "The Mountain",
-    cover: bookMountain,
-    year: "2024",
-    description: "A haunting exploration of loss and redemption set against the backdrop of the Appalachian Mountains."
+    id: "the-notebook",
+    title: "The Notebook",
+    cover: bookNotebook,
+    year: "1996",
+    description: "A timeless love story that follows Noah and Allie through their passionate young romance and enduring love."
   },
   {
-    id: "the-sea",
-    title: "The Sea",
-    cover: bookSea,
-    year: "2022",
-    description: "An intimate portrait of a coastal community facing the inevitability of change."
+    id: "dear-john",
+    title: "Dear John",
+    cover: bookDearJohn,
+    year: "2006",
+    description: "A soldier falls in love with a college student, but their relationship is tested by war and time."
   },
   {
-    id: "the-night",
-    title: "The Night",
-    cover: bookNight,
-    year: "2021",
-    description: "A mesmerizing tale of three generations of women and the secrets they keep."
+    id: "a-walk-to-remember",
+    title: "A Walk to Remember",
+    cover: bookWalkToRemember,
+    year: "1999",
+    description: "A story of teenage love and faith that will stay with you long after the last page."
   },
   {
-    id: "forest",
-    title: "Forest",
-    cover: bookForest,
-    year: "2019",
-    description: "Elena's debut novel that launched her literary career with critical acclaim."
+    id: "safe-haven",
+    title: "Safe Haven",
+    cover: bookSafeHaven,
+    year: "2010",
+    description: "A woman with a mysterious past finds love and safety in a small North Carolina town."
   }
 ];
 
