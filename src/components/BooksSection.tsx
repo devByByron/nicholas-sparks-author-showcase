@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import bookNotebook from "@/assets/nicholas-sparks-the-notebook-min.jpg";
-import bookDearJohn from "@/assets/nicholas-sparks-the-notebook-min.jpg";
+import bookDearJohn from "@/assets/nicholas-sparks-dear-john-min.jpg";
 import bookWalkToRemember from "@/assets/nicholas-sparks-a-walk-to-remember-min.jpg";
 import bookSafeHaven from "@/assets/nicholas-sparks-safe-haven-min.jpg";
 import bookTheLastSong from "@/assets/nicholas-sparks-the-last-song-min.jpg";
