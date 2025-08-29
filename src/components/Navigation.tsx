@@ -21,7 +21,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="heading-secondary text-author-brand">
-            AUTHOR
+            Nicholas Sparks
           </Link>
 
           {/* Desktop Navigation */}
