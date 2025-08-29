@@ -2,10 +2,11 @@ import { useParams, Navigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import bookNotebook from "@/assets/book-notebook.jpg";
-import bookDearJohn from "@/assets/book-dear-john.jpg";
-import bookWalkToRemember from "@/assets/book-walk-to-remember.jpg";
-import bookSafeHaven from "@/assets/book-safe-haven.jpg";
+import bookNotebook from "@/assets/nicholas-sparks-the-notebook-min.jpg";
+import bookDearJohn from "@/assets/nicholas-sparks-dear-john-min.jpg";
+import bookWalkToRemember from "@/assets/nicholas-sparks-a-walk-to-remember-min.jpg";
+import bookSafeHaven from "@/assets/nicholas-sparks-safe-haven-min.jpg";
+import bookTheLastSong from "@/assets/nicholas-sparks-the-last-song-min.jpg";
 
 const booksData = {
   "the-notebook": {
