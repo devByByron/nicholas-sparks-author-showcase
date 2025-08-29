@@ -18,13 +18,13 @@ const HeroSection = () => {
         {/* Author Info */}
         <div className="lg:order-2 slide-up">
           <h1 className="heading-display mb-8">
-            AUTHOR
+            Nicholas Sparks
           </h1>
           
           <div className="space-y-6">
-            <h2 className="heading-primary text-primary">
+{/*             <h2 className="heading-primary text-primary">
               About Nicholas Sparks
-            </h2>
+            </h2> */}
             
             <div className="body-large space-y-4">
               <p>
