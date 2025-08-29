@@ -34,13 +34,13 @@ const books = [
     year: "2010",
     description: "A woman with a mysterious past finds love and safety in a small North Carolina town."
   },
-    {
-    id: "the-last-song",
-    title: "The Last Song",
-    cover: bookTheLastSong,
-    year: "2009",
-    description: "Seventeen year old Veronica Ronnie Miller's life was turned upside-down when her parents divorced and her father moved from New York City to Wilmington, North Carolina."
-  }
+  //   {
+  //   id: "the-last-song",
+  //   title: "The Last Song",
+  //   cover: bookTheLastSong,
+  //   year: "2009",
+  //   description: "Seventeen year old Veronica Ronnie Miller's life was turned upside-down when her parents divorced and her father moved from New York City to Wilmington, North Carolina."
+  // }
 ];
 
 const BooksSection = () => {
