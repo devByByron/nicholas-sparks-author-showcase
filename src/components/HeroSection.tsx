@@ -1,4 +1,4 @@
-import nicholasSparksPortrait from "@/assets/nicholas-sparks-portrait.jpg";
+import nicholasSparksPortrait from "@/assets/nicholas-sparks.jpg";
 
 const HeroSection = () => {
   return (
