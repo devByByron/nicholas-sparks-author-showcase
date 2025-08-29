@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import bookNotebook from "@/assets/book-notebook.jpg";
-import bookDearJohn from "@/assets/book-dear-john.jpg";
-import bookWalkToRemember from "@/assets/book-walk-to-remember.jpg";
-import bookSafeHaven from "@/assets/book-safe-haven.jpg";
+import bookNotebook from "@/assets/nicholas-sparks-the-notebook-min.jpg";
+import bookDearJohn from "@/assets/nicholas-sparks-the-notebook-min.jpg";
+import bookWalkToRemember from "@/assets/nicholas-sparks-a-walk-to-remember-min.jpg";
+import bookSafeHaven from "@/assets/nicholas-sparks-safe-haven-min.jpg";
+import bookTheLastSong from "@/assets/nicholas-sparks-the-last-song-min.jpg";
 
 const books = [
   {
@@ -32,6 +33,13 @@ const books = [
     cover: bookSafeHaven,
     year: "2010",
     description: "A woman with a mysterious past finds love and safety in a small North Carolina town."
+  },
+    {
+    id: "the-last-song",
+    title: "The Last Song",
+    cover: bookTheLastSong,
+    year: "2009",
+    description: "Seventeen year old Veronica Ronnie Miller's life was turned upside-down when her parents divorced and her father moved from New York City to Wilmington, North Carolina."
   }
 ];
 
