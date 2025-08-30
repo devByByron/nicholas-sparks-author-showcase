@@ -20,7 +20,7 @@ const Contact = () => {
     
     toast({
       title: "Message sent successfully!",
-      description: "Thank you for your message. Elena will get back to you within 2-3 business days.",
+      description: "Thank you for your message. Nicholas will get back to you within 2-3 business days.",
     });
     
     // Reset form
