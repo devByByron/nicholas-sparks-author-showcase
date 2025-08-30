@@ -46,7 +46,7 @@ const books = [
 	//   description: "Seventeen year old Veronica Ronnie Miller's life was turned upside-down when her parents divorced and her father moved from New York City to Wilmington, North Carolina."
 	// }
 ];
-//bg-gradient-card
+
 const BooksSection = () => {
 	return (
 		<section className=" py-16 lg:py-24">
@@ -63,12 +63,14 @@ const BooksSection = () => {
 								style={{ animationDelay: `${index * 150}ms` }}
 							>
 								<div className="space-y-4">
-									<div className="relative overflow-hidden rounded-lg shadow-book group-hover:shadow-elegant transition-all duration-500 group-hover:scale-105">
-										<img
-											src={book.cover}
-											alt={`${book.title} book cover`}
-											className="w-full aspect-[3/4] object-cover"
-										/>
+									<div className="relative overflow-hidden rounded-lg shadow-book group-hover:shadow-elegant transition-all duration-500 group-hover:scale-105 bg-white">
+										<div className="w-full aspect-[2/3] bg-gray-100 flex items-center justify-center">
+											<img
+												src={book.cover}
+												alt={`${book.title} book cover`}
+												className="w-full h-full object-cover object-center rounded-lg"
+											/>
+										</div>
 									</div>
 
 									<div className="space-y-2">
