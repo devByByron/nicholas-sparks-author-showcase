@@ -6,47 +6,47 @@
 
 @layer base {
   :root {
-    /* Core backgrounds - warm beige/taupe palette */
-    --background: 35 15% 96%;
-    --foreground: 25 8% 15%;
+    /* Core backgrounds - elegant beige/taupe palette */
+    --background: 35 25% 94%;
+    --foreground: 30 15% 20%;
 
     /* Card and surface colors */
-    --card: 35 20% 98%;
-    --card-foreground: 25 8% 15%;
+    --card: 35 30% 96%;
+    --card-foreground: 30 15% 20%;
 
-    --popover: 35 20% 98%;
-    --popover-foreground: 25 8% 15%;
+    --popover: 35 30% 96%;
+    --popover-foreground: 30 15% 20%;
 
-    /* Primary - rich brown for literary elegance */
-    --primary: 25 25% 25%;
-    --primary-foreground: 35 20% 98%;
+    /* Primary - rich taupe for elegance */
+    --primary: 30 20% 30%;
+    --primary-foreground: 35 30% 96%;
 
-    /* Secondary - warm neutral */
-    --secondary: 35 12% 88%;
-    --secondary-foreground: 25 15% 20%;
+    /* Secondary - soft beige */
+    --secondary: 35 20% 86%;
+    --secondary-foreground: 30 20% 25%;
 
     /* Muted tones for subtle elements */
-    --muted: 35 10% 90%;
-    --muted-foreground: 25 8% 45%;
+    --muted: 35 18% 88%;
+    --muted-foreground: 30 12% 45%;
 
     /* Accent - warm taupe */
-    --accent: 30 15% 85%;
-    --accent-foreground: 25 15% 20%;
+    --accent: 32 18% 82%;
+    --accent-foreground: 30 20% 25%;
 
     /* Destructive remains standard */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 35 20% 98%;
+    --destructive-foreground: 35 30% 96%;
 
-    /* Borders and inputs - subtle warm grays */
-    --border: 35 8% 85%;
-    --input: 35 8% 88%;
-    --ring: 25 25% 25%;
+    /* Borders and inputs - subtle beige tones */
+    --border: 35 15% 82%;
+    --input: 35 18% 85%;
+    --ring: 30 20% 30%;
 
     --radius: 0.5rem;
 
     /* Author brand specific colors */
-    --author-brand: 25 30% 20%;
-    --author-accent: 30 20% 75%;
+    --author-brand: 30 25% 25%;
+    --author-accent: 32 22% 75%;
     
     /* Literary gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--accent)));
