@@ -51,10 +51,10 @@ const Contact = () => {
                     <div>
                       <p className="font-medium">Email</p>
                       <a 
-                        href="mailto:elena@elenarichardson.com" 
+                        href="mailto:youngkillian0308@gmail.com" 
                         className="body-elegant hover:text-author-brand transition-colors"
                       >
-                        elena@elenarichardson.com
+                        nicholas@nicholassparks.com
                       </a>
                     </div>
                   </div>
