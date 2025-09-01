@@ -51,7 +51,7 @@ const Footer = () => {
                   href="mailto:youngkillian0308@gmail.com" 
                   className="body-elegant text-muted-foreground hover:text-author-brand transition-colors"
                 >
-                  youngkillian0308@gmail.com
+                 nicholas@nicholassparks.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
