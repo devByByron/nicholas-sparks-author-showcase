@@ -49,22 +49,22 @@ const books = [
 
 const BooksSection = () => {
 	return (
-		<section className=" py-16 lg:py-24">
-			<div className="container mx-auto px-6 lg:px-8">
+		<section className="py-12 md:py-16 lg:py-24">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="slide-up">
-					<h2 className="heading-primary mb-12 lg:mb-16">Books</h2>
+					<h2 className="heading-primary mb-8 md:mb-12 lg:mb-16">Books</h2>
 
-					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
 						{books.map((book, index) => (
 							<Link
 								key={book.id}
 								to={`/books/${book.id}`}
-								className="group fade-in block"
+								className="group fade-in block max-w-sm mx-auto"
 								style={{ animationDelay: `${index * 150}ms` }}
 							>
-								<div className="space-y-4">
+								<div className="space-y-3 md:space-y-4">
 									<div className="relative overflow-hidden rounded-lg shadow-book group-hover:shadow-elegant transition-all duration-500 group-hover:scale-105 bg-white">
-										<div className="w-full aspect-[2/3] bg-gray-100 flex items-center justify-center">
+										<div className="w-full max-w-[240px] mx-auto aspect-[2/3] bg-gray-100 flex items-center justify-center">
 											<img
 												src={book.cover}
 												alt={`${book.title} book cover`}
@@ -73,8 +73,8 @@ const BooksSection = () => {
 										</div>
 									</div>
 
-									<div className="space-y-2">
-										<h3 className="heading-secondary group-hover:text-author-brand transition-colors duration-300">
+									<div className="space-y-1 md:space-y-2 text-center">
+										<h3 className="text-lg md:text-xl font-semibold text-foreground group-hover:text-author-brand transition-colors duration-300 line-clamp-2">
 											{book.title}
 										</h3>
 										<p className="text-sm text-muted-foreground font-sans">
