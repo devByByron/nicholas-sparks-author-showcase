@@ -1,6 +1,16 @@
 import { Mail, MapPin, Phone, Twitter, Facebook, Instagram } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  const isActive = (path: string) => location.pathname === path;
+
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Books", path: "/books" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
     <footer className="bg-background border-t border-border/40">
       <div className="container mx-auto px-6 lg:px-8 py-12">
@@ -29,15 +39,19 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="heading-secondary text-lg">Quick Links</h3>
             <nav className="space-y-2">
-              <a href="/" className="block body-elegant text-muted-foreground hover:text-author-brand transition-colors">
-                Home
-              </a>
-              <a href="/books" className="block body-elegant text-muted-foreground hover:text-author-brand transition-colors">
-                Books
-              </a>
-              <a href="/contact" className="block body-elegant text-muted-foreground hover:text-author-brand transition-colors">
-                Contact
-              </a>
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`block body-elegant transition-colors duration-300 ${
+                    isActive(item.path)
+                      ? "text-author-brand font-medium"
+                      : "text-muted-foreground hover:text-author-brand"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
             </nav>
           </div>
 
@@ -48,10 +62,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-author-brand flex-shrink-0" />
                 <a 
-                  href="mailto:youngkillian0308@gmail.com" 
+                  href="mailto:nicholas@nicholassparks.com" 
                   className="body-elegant text-muted-foreground hover:text-author-brand transition-colors"
                 >
-                 nicholas@nicholassparks.com
+                  nicholas@nicholassparks.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
