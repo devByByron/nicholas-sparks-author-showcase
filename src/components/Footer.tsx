@@ -11,6 +11,13 @@ const Footer = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+   const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="bg-background border-t border-border/40">
       <div className="container mx-auto px-6 lg:px-8 py-12">
@@ -41,6 +48,7 @@ const Footer = () => {
             <nav className="space-y-2">
               {navItems.map((item) => (
                 <Link
+                
                   key={item.name}
                   to={item.path}
                   className={`block body-elegant transition-colors duration-300 ${
