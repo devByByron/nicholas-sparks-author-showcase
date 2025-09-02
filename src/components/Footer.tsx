@@ -48,7 +48,7 @@ const Footer = () => {
             <nav className="space-y-2">
               {navItems.map((item) => (
                 <Link
-                  onClick({scrollToTop})
+                 onClick={scrollToTop}
                   key={item.name}
                   to={item.path}
                   className={`block body-elegant transition-colors duration-300 ${
