@@ -7,6 +7,7 @@ const Home = () => {
     <Layout>
       <HeroSection />
       <BooksSection />
+      <Footer/>
     </Layout>
   );
 };
